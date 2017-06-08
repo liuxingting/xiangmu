@@ -1,0 +1,276 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir;
+}
+.container,
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container {
+    .box(vertical); //把父元素设置为弹性盒布局，里面内容垂直排列
+    .header {
+        .full(100%,0.84rem,#f94758);
+        .box;
+        .left {
+            .full(0.52rem,0.84rem,none);
+            margin-left: 0.4rem;
+            img {
+                width: 0.44rem;
+                height: 0.35rem;
+                margin-top: 0.21rem;
+            }
+        }
+        .right {
+            -webkit-box-flex: 1;
+            height: 0.84rem;
+            h2 {
+                font-size: 0.38rem;
+                color: #ffffff;
+                margin-left: 2.43rem;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+    .main {
+        -webkit-box-flex: 1;
+        .full(100%,12.01rem,#f3f3f3);
+        .maina {
+            .full(100%,0.98rem,none);
+            .box;
+            h2 {
+                font-size: 0.29rem;
+                margin: 0.4rem;
+            }
+            img {
+                width: 0.15rem;
+                height: 0.25rem;
+                margin-left: 5rem;
+                margin-top: 0.36rem;
+            }
+            span{
+//              display: block;
+                font-size: 0.35rem;
+                margin-left: 4.1rem;
+                margin-top: 0.39rem;
+            }
+        }
+        .mainc {
+            .full(100%,5.7rem,none);
+            -webkit-box-flex: 1;
+            .box(vertical);
+            .mainca {
+                .full(100%,2.24rem,none);
+                p {
+                    display: inline-block;
+                    margin-top: 0.77rem;
+                    margin-left: 0.41rem;
+                    font-size: 0.26rem;
+                    color: #b2b2b2;
+                    span {
+                        color: #333333;
+                    }
+                }
+                a {
+                    display: block;
+                    margin-left: 0.41rem;
+                    font-size: 0.26rem;
+                    color: #b2b2b2;
+                    span {
+                        color: #333333;
+                    }
+                }
+            }
+            .maincb {
+                .full(6.73rem,3.03rem,none);
+                margin-left: 0.4rem;
+                margin-top: 0.36rem;
+                .a {
+                    .full(6.73rem,0.69rem,none);
+                    border-bottom: 1px solid #e7e7e7;
+                    .box;
+                    p {
+                        font-size: 0.21rem;
+                        color: #999999;
+                        margin-top: 0.19rem;
+                    }
+                    span {
+                        display: block;
+                        font-size: 0.28rem;
+                        color: #333333;
+                        margin-top: 0.19rem;
+                        margin-left: 0.27rem;
+                    }
+                }
+                .b {
+                    .full(6.73rem,0.69rem,none);
+                    border-bottom: 1px solid #fabd6d;
+                    .box;
+                     p {
+                         display: block;
+                        font-size: 0.21rem;
+                        color: #333333;
+                        margin-top: 0.19rem;
+                    }
+                    span {
+                        display: block;
+                        font-size: 0.28rem;
+                        color: #999999;
+                        margin-top: 0.19rem;
+                        margin-left: 0.27rem;
+                    }
+                }
+                .c{
+                    .full(6.73rem,0.69rem,none);
+                    border-bottom: 1px solid #e7e7e7;
+                    margin-top: 0.9rem;
+                    margin-left:-2.34rem;
+                    .box;
+                     p {
+                        font-size: 0.21rem;
+                        color: #333333;
+                        margin-top: 0.19rem;
+                    }
+                    span {
+                        display: block;
+                        font-size: 0.28rem;
+                        color: #999999;
+                        margin-top: 0.19rem;
+                        margin-left: 0.27rem;
+                    }
+                }
+            }
+        }
+        .mainb {
+            .full(100%,0.89rem,none);
+            margin-top: 2.5rem;
+            background: url(../img/圆角矩形-1.png)no-repeat;
+            background-size: 6.72rem,0.85rem;
+            margin-left: 0.33rem;
+            a {
+                display: block;
+                font-size: 0.3rem;
+                color: #ffffff;
+                padding-left: 2.7rem;
+                padding-top: 0.27rem;
+            }
+        }
+    }
+}
+.zhezhao {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    //定位
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    //调整层叠顺序
+    z-index: 99999;
+
+    .sure {
+        .full(4.5rem,2.4rem,#ffffff);
+        border-radius: 0.15rem;
+        position: absolute;
+        left: 50%;
+        margin-left: -2.25rem;
+        top: 50%;
+        margin-top: -3.2rem;
+        .surea {
+            .full(4.47rem,0.78rem,none);
+            p {
+                margin-top: 0.58rem;
+                margin-left: 1.18rem;
+                font-size: 0.27rem;
+                color: #333333;
+            }
+        }
+        .sureb {
+            .full(4.48rem,0.87rem,none);
+            .box;
+            p {
+                a {
+                    display: block;
+                    font-size: 0.27rem;
+                    color: #333333;
+                    margin-left: 0.79rem;
+                    margin-top: 0.27rem;
+                }
+            }
+            span {
+                a {
+                    display: block;
+                    font-size: 0.27rem;
+                    color: #ff9914;
+                    margin-left: 1rem;
+                    margin-top: 0.27rem;
+                }
+
+            }
+        }
+    }
+    .commit{
+        .full(4.74rem,2.68rem,#ffffff);
+        border-radius: 0.15rem;
+        position: absolute;
+        left: 50%;
+        margin-left: -2.25rem;
+        top: 50%;
+        margin-top: -3.2rem;
+        .commita {
+            .full(4.47rem,0.78rem,none);
+            p {
+                margin-top: 0.3rem;
+                margin-left: 0.3rem;
+                font-size: 0.27rem;
+                color: #666666;
+            }
+        }
+        .commitb{
+            .full(4rem,0.6rem,none);
+            border-bottom: 2px solid #ffc272;
+            margin-top: 0.21rem;
+            margin-left: 0.32rem;
+            p{
+                color: #cccccc;
+                text-indent: 3em;
+                font-size: 0.24rem;
+                margin-top: 0.2rem;
+            }
+        }
+        .commitc {
+            .full(4.48rem,0.87rem,none);
+            .box;
+            p {
+                a {
+                    display: block;
+                    font-size: 0.27rem;
+                    color: #333333;
+                    margin-left: 0.79rem;
+                    margin-top: 0.27rem;
+                }
+
+            }
+            span {
+                a {
+                    display: block;
+                    font-size: 0.27rem;
+                    color: #ff9914;
+                    margin-left: 1rem;
+                    margin-top: 0.27rem;
+                }
+
+            }
+        }
+    }
+}

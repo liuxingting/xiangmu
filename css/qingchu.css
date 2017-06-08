@@ -1,0 +1,297 @@
+@import url(reset.css);
+.container,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container .header {
+  width: 100%;
+  height: 0.84rem;
+  background: #f94758;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .header .left {
+  width: 0.52rem;
+  height: 0.84rem;
+  background: none;
+  margin-left: 0.4rem;
+}
+.container .header .left img {
+  width: 0.44rem;
+  height: 0.35rem;
+  margin-top: 0.21rem;
+}
+.container .header .right {
+  -webkit-box-flex: 1;
+  height: 0.84rem;
+}
+.container .header .right h2 {
+  font-size: 0.38rem;
+  color: #ffffff;
+  margin-left: 2.43rem;
+  margin-top: 0.2rem;
+}
+.container .main {
+  -webkit-box-flex: 1;
+  width: 100%;
+  height: 12.01rem;
+  background: #f3f3f3;
+}
+.container .main .maina {
+  width: 100%;
+  height: 0.98rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .main .maina h2 {
+  font-size: 0.29rem;
+  margin: 0.4rem;
+}
+.container .main .maina img {
+  width: 0.15rem;
+  height: 0.25rem;
+  margin-left: 5rem;
+  margin-top: 0.36rem;
+}
+.container .main .maina span {
+  font-size: 0.35rem;
+  margin-left: 4.1rem;
+  margin-top: 0.39rem;
+}
+.container .main .mainc {
+  width: 100%;
+  height: 5.7rem;
+  background: none;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container .main .mainc .mainca {
+  width: 100%;
+  height: 2.24rem;
+  background: none;
+}
+.container .main .mainc .mainca p {
+  display: inline-block;
+  margin-top: 0.77rem;
+  margin-left: 0.41rem;
+  font-size: 0.26rem;
+  color: #b2b2b2;
+}
+.container .main .mainc .mainca p span {
+  color: #333333;
+}
+.container .main .mainc .mainca a {
+  display: block;
+  margin-left: 0.41rem;
+  font-size: 0.26rem;
+  color: #b2b2b2;
+}
+.container .main .mainc .mainca a span {
+  color: #333333;
+}
+.container .main .mainc .maincb {
+  width: 6.73rem;
+  height: 3.03rem;
+  background: none;
+  margin-left: 0.4rem;
+  margin-top: 0.36rem;
+}
+.container .main .mainc .maincb .a {
+  width: 6.73rem;
+  height: 0.69rem;
+  background: none;
+  border-bottom: 1px solid #e7e7e7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .main .mainc .maincb .a p {
+  font-size: 0.21rem;
+  color: #999999;
+  margin-top: 0.19rem;
+}
+.container .main .mainc .maincb .a span {
+  display: block;
+  font-size: 0.28rem;
+  color: #333333;
+  margin-top: 0.19rem;
+  margin-left: 0.27rem;
+}
+.container .main .mainc .maincb .b {
+  width: 6.73rem;
+  height: 0.69rem;
+  background: none;
+  border-bottom: 1px solid #fabd6d;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .main .mainc .maincb .b p {
+  display: block;
+  font-size: 0.21rem;
+  color: #333333;
+  margin-top: 0.19rem;
+}
+.container .main .mainc .maincb .b span {
+  display: block;
+  font-size: 0.28rem;
+  color: #999999;
+  margin-top: 0.19rem;
+  margin-left: 0.27rem;
+}
+.container .main .mainc .maincb .c {
+  width: 6.73rem;
+  height: 0.69rem;
+  background: none;
+  border-bottom: 1px solid #e7e7e7;
+  margin-top: 0.9rem;
+  margin-left: -2.34rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .main .mainc .maincb .c p {
+  font-size: 0.21rem;
+  color: #333333;
+  margin-top: 0.19rem;
+}
+.container .main .mainc .maincb .c span {
+  display: block;
+  font-size: 0.28rem;
+  color: #999999;
+  margin-top: 0.19rem;
+  margin-left: 0.27rem;
+}
+.container .main .mainb {
+  width: 100%;
+  height: 0.89rem;
+  background: none;
+  margin-top: 2.5rem;
+  background: url(../img/圆角矩形-1.png) no-repeat;
+  background-size: 6.72rem,0.85rem;
+  margin-left: 0.33rem;
+}
+.container .main .mainb a {
+  display: block;
+  font-size: 0.3rem;
+  color: #ffffff;
+  padding-left: 2.7rem;
+  padding-top: 0.27rem;
+}
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+.zhezhao .sure {
+  width: 4.5rem;
+  height: 2.4rem;
+  background: #ffffff;
+  border-radius: 0.15rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.25rem;
+  top: 50%;
+  margin-top: -3.2rem;
+}
+.zhezhao .sure .surea {
+  width: 4.47rem;
+  height: 0.78rem;
+  background: none;
+}
+.zhezhao .sure .surea p {
+  margin-top: 0.58rem;
+  margin-left: 1.18rem;
+  font-size: 0.27rem;
+  color: #333333;
+}
+.zhezhao .sure .sureb {
+  width: 4.48rem;
+  height: 0.87rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.zhezhao .sure .sureb p a {
+  display: block;
+  font-size: 0.27rem;
+  color: #333333;
+  margin-left: 0.79rem;
+  margin-top: 0.27rem;
+}
+.zhezhao .sure .sureb span a {
+  display: block;
+  font-size: 0.27rem;
+  color: #ff9914;
+  margin-left: 1rem;
+  margin-top: 0.27rem;
+}
+.zhezhao .commit {
+  width: 4.74rem;
+  height: 2.68rem;
+  background: #ffffff;
+  border-radius: 0.15rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.25rem;
+  top: 50%;
+  margin-top: -3.2rem;
+}
+.zhezhao .commit .commita {
+  width: 4.47rem;
+  height: 0.78rem;
+  background: none;
+}
+.zhezhao .commit .commita p {
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
+  font-size: 0.27rem;
+  color: #666666;
+}
+.zhezhao .commit .commitb {
+  width: 4rem;
+  height: 0.6rem;
+  background: none;
+  border-bottom: 2px solid #ffc272;
+  margin-top: 0.21rem;
+  margin-left: 0.32rem;
+}
+.zhezhao .commit .commitb p {
+  color: #cccccc;
+  text-indent: 3em;
+  font-size: 0.24rem;
+  margin-top: 0.2rem;
+}
+.zhezhao .commit .commitc {
+  width: 4.48rem;
+  height: 0.87rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.zhezhao .commit .commitc p a {
+  display: block;
+  font-size: 0.27rem;
+  color: #333333;
+  margin-left: 0.79rem;
+  margin-top: 0.27rem;
+}
+.zhezhao .commit .commitc span a {
+  display: block;
+  font-size: 0.27rem;
+  color: #ff9914;
+  margin-left: 1rem;
+  margin-top: 0.27rem;
+}

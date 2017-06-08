@@ -1,0 +1,161 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir;
+}
+.container,
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container {
+    .box(vertical); //把父元素设置为弹性盒布局，里面内容垂直排列
+    .header {
+        .full(100%,4.62rem,none);
+        background: url(../img/photo/矩形-2.png)no-repeat;
+        background-size: 100% auto;
+        .all {
+            .full(6.75rem,4.42rem,none);
+            margin-left: 0.4rem;
+            .a {
+                position: absolute;
+                right: 187px;
+                bottom: 1133px;
+            }
+            .top {
+                .full(100%,0.89rem,none);
+                .box;
+                .left {
+                    .full(auto,0.89rem,none);
+                    .box;
+                    a {
+                        img {
+                            width: 0.37rem;
+                            height: 0.39rem;
+                            margin-top: 0.26rem;
+                        }
+                    }
+                    h2 {
+                        font-size: 0.32rem;
+                        margin-top: 0.29rem;
+                        margin-left: 0.42rem;
+                        color: #fffefe;
+                    }
+                }
+                .center {
+                    -webkit-box-flex: 1;
+                }
+                .right {
+                    .full(auto,0.89rem,none);
+                    h2 {
+                        font-size: 0.32rem;
+                        margin-top: 0.29rem;
+                        color: #fffefe;
+                    }
+                }
+            }
+            .topa {
+                .full(100%,1.01rem,none);
+                h2 {
+                    font-size: 0.32rem;
+                    margin-top: 0.398em;
+                    margin-left: 0.39rem;
+                    color: #fffefe;
+                }
+            }
+            .topb {
+                .full(100%,1.34rem,none);
+                .box;
+                border-bottom: 1px solid #fc7b88;
+                h1 {
+                    font-size: 0.57rem;
+                    color: #fffefe;
+                }
+                a {
+                    display: block;
+                    font-size: 0.32rem;
+                    margin-left: 0.33rem;
+                    margin-top: 0.26rem;
+                    color: #fffefe;
+                }
+                span {
+                    display: block;
+                    font-size: 0.32rem;
+                    margin-left: 0.21rem;
+                    margin-top: 0.26rem;
+                    color: #fffefe;
+                }
+            }
+            .topc {
+                .full(100%,1.12rem,none);
+                .box;
+                .topca {
+                    .full(auto,0.77rem,none);
+                    h2 {
+                        display: block;
+                        font-size: 0.3rem;
+                        color: #fffefe;
+                        margin-left: 1rem;
+                        margin-top: 0.2rem;
+                    }
+                    p {
+                        display: block;
+                        font-size: 0.37rem;
+                        color: #fffefe;
+                        margin-left: 0.76rem;
+                    }
+                }
+                .topcb {
+                    .full(auto,0.77rem,none);
+                    h2 {
+                        display: block;
+                        font-size: 0.3rem;
+                        color: #fffefe;
+                        margin-left: 1.8rem;
+                        margin-top: 0.2rem;
+                    }
+                    p {
+                        display: block;
+                        font-size: 0.37rem;
+                        color: #fffefe;
+                        margin-left: 1.9rem;
+                    }
+                }
+            }
+        }
+
+    }
+    .main {
+        -webkit-box-flex: 1;
+        .full(100%,auto,none);
+        .maina {
+            .full(100%,1.3rem,none);
+            border-bottom: 1px solid #e5e5e5;
+            .mainaa{
+                .full(6.75rem,auto,none);
+                .box;
+                margin-left: 0.4rem;
+                .left{
+                    .full(1.46rem,auto,none);
+                    margin-top: 0.05rem;
+                    img{
+                        width: 1.19rem;
+                    }
+                }
+                .center{
+                    -webkit-box-flex: 1;
+                }
+                .right{
+                    .full(1.85rem,auto,none);
+                }
+            }
+        }
+    }
+}

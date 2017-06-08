@@ -1,0 +1,191 @@
+@import url(reset.css);
+.container,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container .header {
+  width: 100%;
+  height: 0.9rem;
+  background: #f93d4f;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .header .left {
+  width: 0.52rem;
+  height: 0.84rem;
+  background: none;
+  margin-left: 0.4rem;
+}
+.container .header .left img {
+  width: 0.44rem;
+  height: 0.35rem;
+  margin-top: 0.21rem;
+}
+.container .header .right {
+  -webkit-box-flex: 1;
+  height: 0.84rem;
+}
+.container .header .right h2 {
+  font-size: 0.38rem;
+  color: #ffffff;
+  margin-left: 2.43rem;
+  margin-top: 0.2rem;
+}
+.container .main {
+  -webkit-box-flex: 1;
+  width: 100%;
+  height: auto;
+  background: #eeeeee;
+}
+.container .main .maina {
+  width: 100%;
+  height: 6.58rem;
+  background: #ffffff;
+}
+.container .main .maina .a {
+  width: 100%;
+  height: 1.22rem;
+  background: none;
+  border-bottom: 1px solid #e1e1e1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .main .maina .a .left {
+  width: auto;
+  height: 1.22rem;
+  background: none;
+}
+.container .main .maina .a .left h2 {
+  margin-left: 0.4rem;
+  margin-top: 0.44rem;
+  font-size: 0.32rem;
+}
+.container .main .maina .a .left a h2 {
+  margin-left: 0.4rem;
+  margin-top: 0.2rem;
+  font-size: 0.32rem;
+  color: #333333;
+}
+.container .main .maina .a .right {
+  width: auto;
+  height: 1.22rem;
+  background: none;
+  margin-left: 5.09rem;
+  margin-top: 0.1rem;
+}
+.container .main .maina .a .right img {
+  width: 0.98rem;
+}
+.container .main .maina .a .r {
+  width: auto;
+  height: 0.9rem;
+  background: none;
+  margin-left: 4.8rem;
+  margin-top: 0.2rem;
+}
+.container .main .maina .a .r a img {
+  width: 0.23rem;
+  height: 0.31rem;
+}
+.container .main .maina .b {
+  width: 100%;
+  height: 0.9rem;
+  background: none;
+  border-bottom: 1px solid #e1e1e1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .main .maina .b .left {
+  width: auto;
+  height: 0.9rem;
+  background: none;
+  margin-left: 0.4rem;
+  margin-top: 0.2rem;
+}
+.container .main .maina .b .left h2 {
+  font-size: 0.32rem;
+}
+.container .main .maina .b .right {
+  width: auto;
+  height: 0.9rem;
+  background: none;
+}
+.container .main .maina .b .right h2 {
+  margin-left: 5.4rem;
+  margin-top: 0.2rem;
+  font-size: 0.25rem;
+  color: #999999;
+}
+.container .main .maina .b .right span {
+  font-size: 0.25rem;
+  margin-top: 0.2rem;
+  margin-left: 4rem;
+  color: #999999;
+}
+.container .main .maina .b .right a h2 {
+  margin-left: 3.96rem;
+  margin-top: 0.2rem;
+  font-size: 0.25rem;
+  color: #999999;
+}
+.container .main .maina .b .right a h2 span {
+  margin-left: 0.66rem;
+  margin-top: 0.2rem;
+}
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+.zhezhao .sure {
+  width: 4.5rem;
+  height: 2.64rem;
+  background: #ffffff;
+  border-radius: 0.15rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.25rem;
+  top: 50%;
+  margin-top: -3.2rem;
+}
+.zhezhao .sure .surea {
+  width: 3.52rem;
+  height: 0.8rem;
+  background: none;
+  border-bottom: 1px solid #eeeeee;
+  margin-left: 0.55rem;
+}
+.zhezhao .sure .surea h2 {
+  display: inline-block;
+  font-size: 0.3rem;
+  margin-top: 0.23rem;
+}
+.zhezhao .sure .surea h2 a {
+  color: #000000;
+}
+.zhezhao .sure .sureb {
+  width: 3.52rem;
+  height: 0.8rem;
+  background: none;
+  margin-left: 0.55rem;
+}
+.zhezhao .sure .sureb h2 {
+  font-size: 0.3rem;
+  margin-top: 0.25rem;
+}
+.zhezhao .sure .sureb h2 a {
+  color: #000000;
+}
